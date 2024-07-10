@@ -1887,6 +1887,9 @@ var PDFViewerApplication = {
 var validateFileURL = void 0;
 {
   var HOSTED_VIEWER_ORIGINS = ['null', 'http://mozilla.github.io', 'https://mozilla.github.io'];
+  // hack to get it to work
+  return;
+  
   validateFileURL = function validateFileURL(file) {
     if (file === undefined) {
       return;
