@@ -1887,8 +1887,6 @@ var PDFViewerApplication = {
 var validateFileURL = void 0;
 {
   var HOSTED_VIEWER_ORIGINS = ['null', 'http://mozilla.github.io', 'https://mozilla.github.io'];
-  // hack to get it to work
-  return;
   
   validateFileURL = function validateFileURL(file) {
     if (file === undefined) {
@@ -1937,7 +1935,7 @@ function webViewerInitialized() {
   var queryString = document.location.search.substring(1);
   var params = (0, _ui_utils.parseQueryString)(queryString);
   file = 'file' in params ? params.file : appConfig.defaultUrl;
-  validateFileURL(file);
+  // validateFileURL(file);
   var waitForBeforeOpening = [];
   var fileInput = document.createElement('input');
   fileInput.id = appConfig.openFileInputName;
