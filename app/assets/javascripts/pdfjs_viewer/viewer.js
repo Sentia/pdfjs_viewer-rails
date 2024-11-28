@@ -2208,7 +2208,7 @@ function webViewerOpenFile() {
   document.getElementById(openFileInputName).click();
 }
 function webViewerPrint() {
-  window.print();
+  // window.print();
 }
 function webViewerDownload() {
   PDFViewerApplication.download();
