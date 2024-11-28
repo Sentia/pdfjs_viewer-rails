@@ -1635,7 +1635,7 @@ var PDFViewerApplication = {
           var js = javaScript[i];
           if (js && regex.test(js)) {
             setTimeout(function () {
-              window.print();
+              // window.print();
             });
             return;
           }
